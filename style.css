@@ -1,0 +1,81 @@
+:root {
+  --eaton-blue: #007bc1;
+  --open-sans: 'Open Sans'; sans-serif;
+}
+#main { display: flex; }
+body {
+  background-color: #E2E5E5;
+  color: #333;
+  font-family: var(--open-sans);
+}
+h1 {
+  color: var(--eaton-blue);
+  margin: 0;
+}
+h2 { font-size: 16px; }
+hr { width: 100%; }
+#copied {
+  display: none;
+  font-size: 12px;
+  margin-top: 10px;
+}
+#formatted {
+  background: transparent;
+  border: none;
+  display: none;
+  width: 50%;
+}
+.container {
+  align-items: center;
+  background: rgba(255, 255, 255, 85%);
+  border-radius: 8px;
+  box-shadow:  0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 4%;
+  width: 40%;
+}
+
+/*input styles*/
+#textareaToPaste {
+  height: 50px;
+  width: 50%;
+}
+input { height: 20px }
+input, textarea {
+  border: 1px solid #BBBFC2;
+  border-radius: 4px;
+  font-family: var(--open-sans);
+  margin: 10px 10px 20px 0px;
+}
+.inputs {
+  display: flex;
+}
+
+/*button styles*/
+button {
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: var(--open-sans);
+  font-weight: 500;
+  height: 35px;
+  margin-right: 10px;
+  padding: 0 16px;
+  width: 90px;
+}
+.button-fill {
+  background-color: var(--eaton-blue);
+  border: none;
+  box-shadow:  0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  color: #fff;
+}
+.button-outline {
+  background-color: #fff;
+  border: 1px solid var(--eaton-blue);
+}
+button:hover {
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 5px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 12px 2px rgba(0, 0, 0, 0.12);
+}
+#copy-button { display: none; }
