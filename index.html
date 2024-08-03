@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+  <div id="main">
+    <div class="container">
+      <div>
+        <h1>Getty titles</h1>
+        <h2>Add dashes between words, make lowercase, add Getty</h2>
+        <hr>
+        <div class="inputs">
+          <textarea id="textareaToPaste" type="text" placeholder="Write or paste text" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+          <input id="gettyNumber" type="text" placeholder="Paste Getty #"></input>
+        </div>
+        <div class="buttons">
+          <button class="button-fill" onclick="format()">Format</button>
+          <button class="button-outline" onclick="clearAll()">Clear All</button>
+        </div>
+        <textarea id="formatted" type="text" onfocus='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+        <div class="buttons">
+          <button id="copy-button" class="button-fill" onclick="copyResult()">Copy</button>
+          <span id="copied">&#9989; Copied!</span>
+        </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</html>
